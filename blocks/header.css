@@ -1,0 +1,120 @@
+.header {
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-size: cover;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  /* display:flex; */
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.nav {
+  /* margin-top: 30px;
+    margin-right: 80px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  width: 125px;
+  height: 142px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  margin-bottom: 0;
+  align-items: center;
+
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  list-style: none;
+}
+
+.nav__link:hover {
+  color: #2fe0ed;
+}
+
+.header__title {
+  position: relative;
+  margin-top: 202px;
+  /* margin-left: 80px; */
+  justify-content: flex-start;
+  max-width: 729px;
+}
+
+.header__span-accent {
+  color: #2f80ed;
+  font-family: "Noto Serif", 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.header__description {
+  position: relative;
+  margin-top: 28px;
+  /* margin-left: 80px; */
+  font-family: "Noto Serif", 'Times New Roman', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 638px;
+}
+
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+
+.header__paragraph {
+  position: relative;
+  /* margin-right: 80px;
+    margin-bottom: 40px; */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__paragraph_hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* left: 80px;
+  bottom: 40px; */
+}
+
+.header__paragraph_address {
+  
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  /* position: absolute; */
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 80px;
+  margin-top: 40px;
+}
