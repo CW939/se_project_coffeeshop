@@ -27,19 +27,13 @@
   font-size: 16px;
   color: #ffffff;
   line-height: 20px;
-
   margin-top: 0px;
-  /* why do I need to set to 0? */
-
   margin-bottom: 20px;
 }
 
 .footer__list {
   list-style: none;
   padding-left: 0px;
-  /* why do I need to set padding left to aling it to the right?  there is a padding-inline-start from ul stylesheet..? */
-
-  /* row-gap: 16px; */
 }
 
 .footer__list-item {
@@ -49,7 +43,6 @@
   line-height: 20px;
   color: #ffffff;
   gap: 16px;
-
   margin-bottom: 16px;
 }
 
