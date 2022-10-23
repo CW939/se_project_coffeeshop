@@ -39,7 +39,7 @@
   padding-left: 0px;
   /* why do I need to set padding left to aling it to the right?  there is a padding-inline-start from ul stylesheet..? */
 
-  row-gap: 16px;
+  /* row-gap: 16px; */
 }
 
 .footer__list-item {
