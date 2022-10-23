@@ -1,75 +1,98 @@
-.about{
-    min-height: 720px;
-    max-height: 800px;
 
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
 }
 
-.about__title{
-    position: absolute;
-    top: 100px;
-    left: 80px;
-    max-width: 251px;
 
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 52px; 
+.about {
+  background-color: #0a2750;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.about__content{
-    position: relative;
-    margin-top: 119px;
+.about__title {
+  position: relative;
+  padding-top: 100px;
+  padding-left: 80px;
+  max-width: 251px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  color: #ffffff;
+  line-height: 52px;
+  z-index: 3;
+}
+
+.about__content {
+  position: relative;
+  align-items: flex-end;
+  max-width: 660px;
+  /* margin-top: 119px;
     margin-right: 80px;
-    margin-bottom: 173px;
+    margin-bottom: 173px; */
 
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding-top: 119px;
+  padding-right: 80px;
+  padding-bottom: 173px;
 
-    align-items: ;
-    
 }
 
 .about__paragraph {
-
-    font-family: Noto Serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-
-
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-
-
 .about__circle {
-    background-color: #2f80ed;
-    width: 426px;
-    height: 426px;
-    border-radius: 50%;
-    position: absolute;
-    top: -156px;
-    left: -129px;
-    /* z-index: -1; */
-  }
+  background-color: #2f80ed;
+  width: 426px;
+  height: 426px;
+  border-radius: 50%;
+  position: absolute;
+  top: -156px;
+  left: -129px;
+  z-index: 2;
+}
 
 .about__circle_animation_blurred {
+  background-color: #2f80ed;
+  width: 426px;
+  height: 426px;
+  border-radius: 50%;
+  position: absolute;
+  top: -156px;
+  left: -129px;
+  z-index: 1;
 
-    background-color: #2f80ed;
-    width: 426px;
-    height: 426px;
-    border-radius: 50%;
-    position: absolute;
-    top: -156px;
-    left: -129px;
+  /* do I remove everything that is from about circle, and then mix classes for the animated element? */
 
-    /* animation stuff
-    0%
-    50%
-    100% */
-
-
-
-  }
+  animation-name: pulsate;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
