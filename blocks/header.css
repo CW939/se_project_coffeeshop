@@ -96,7 +96,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 40px;
+  bottom: 40px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0 80px;
+  box-sizing: border-box;
 }
 
 .header__paragraph-hours {
