@@ -41,10 +41,6 @@
   position: relative;
   align-items: flex-end;
   max-width: 660px;
-  /* margin-top: 119px;
-    margin-right: 80px;
-    margin-bottom: 173px; */
-
   padding-top: 119px;
   padding-right: 80px;
   padding-bottom: 173px;
@@ -79,21 +75,10 @@
 }
 
 .about__circle_animation_blurred {
-  background-color: #2f80ed;
-  width: 426px;
-  height: 426px;
-  border-radius: 50%;
-  position: absolute;
-  top: -156px;
-  left: -129px;
-  z-index: 1;
-
-  /* do I remove everything that is from about circle, and then mix classes for the animated element? */
-
   animation-name: pulsate;
   animation-duration: 1.3s;
   animation-timing-function: ease-in-out;
-  animation-delay: 0;
+  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-fill-mode: both;

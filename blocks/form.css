@@ -7,14 +7,12 @@
   flex-direction: column;
   border: none;
   align-items: center;
-  /* max-width: 385px; */
   width: 385px;
 }
 
 .form__label {
   font-weight: 500;
   margin-bottom: 8px;
-  /* margin-left: 12px; */
 }
 
 .form__label_type_checkbox {
@@ -25,7 +23,6 @@
   border-radius: 4px;
   height: 60px;
   width: 100%;
-  /* max-width: 385px; */
   margin-bottom: 32px;
   font-size: 20px;
   line-height: 30px;
@@ -37,7 +34,6 @@
   height: 60px;
   width: 100%;
   border-radius: 4px;
-  /* max-width: 385px; */
   background-color: #2f80ed;
   color: #ffffff;
   margin-top: 32px;
