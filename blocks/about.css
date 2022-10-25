@@ -63,6 +63,10 @@
   margin-bottom: 0;
 }
 
+.about__paragraph:last-child {
+  padding-bottom: 0;
+}
+
 .about__circle {
   background-color: #2f80ed;
   width: 426px;

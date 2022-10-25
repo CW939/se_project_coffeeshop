@@ -84,22 +84,22 @@
             <div class="card">
               <h4 class="card__title">Filter</h4>
               <ul class="card__list">
-                <li>
+                <li class="card_list-item">
                   Regular (12 oz)<span class="card__list-divider"></span> $1
                 </li>
-                <li>
+                <li class="card_list-item">
                   Large (16 oz)<span class="card__list-divider"></span> $1.25
                 </li>
-                <li>
+                <li class="card_list-item">
                   XL (20 oz)<span class="card__list-divider"></span> $1.5
                 </li>
-                <li>
-                  Party-size (24 oz, decaf)<span class="card__list-divider"
-                    ></span
-                  >
+                <li class="card_list-item">
+                  Party-size (24 oz, decaf)<span
+                    class="card__list-divider"
+                  ></span>
                   $1.75
                 </li>
-                <li>
+                <li class="card_list-item">
                   Iced Coffee (16 oz)<span class="card__list-divider"></span>
                   $1.25
                 </li>
@@ -109,7 +109,7 @@
               <h4 class="card__title">Espresso</h4>
               <ul class="card__list">
                 <li class="card_list-item">
-                  Macchiato<span class="card__list-divider">.........</span> $2.25
+                  Macchiato<span class="card__list-divider"></span> $2.25
                 </li>
                 <li class="card_list-item">
                   Cortado<span class="card__list-divider"></span> $2.5
@@ -120,9 +120,8 @@
                 <li class="card_list-item">
                   Sunrise in the Bay Area (decaf)<span
                     class="card__list-divider"
-                    ></span
-                  >
-                  $10
+                  ></span
+                  >$10
                 </li>
               </ul>
             </div>
@@ -132,13 +131,18 @@
                 <li class="card_list-item">
                   Almond Croissant<span class="card__list-divider"></span> $2
                 </li>
-                <li class="card_list-item">Banana Bread<span class="card__list-divider"></span> $1.75
-                </li class="card_list-item">
-                <li class="card_list-item">Key Lime Pie<span class="card__list-divider"></span> $3</li>
+                <li class="card_list-item">
+                  Banana Bread<span class="card__list-divider"></span> $1.75
+                </li>
+                <li class="card_list-item">
+                  Key Lime Pie<span class="card__list-divider"></span> $3
+                </li>
                 <li class="card_list-item">
                   Blue Velvet<span class="card__list-divider"></span> Cake $3.75
                 </li>
-                <li class="card_list-item">Web Cookie<span class="card__list-divider"></span> $2</li>
+                <li class="card_list-item">
+                  Web Cookie<span class="card__list-divider"></span> $2
+                </li>
                 <li class="card_list-item">
                   Fresh Bug’uette<span class="card__list-divider"></span> $0.25
                 </li>
@@ -154,8 +158,7 @@
             convenience:
           </p>
           <div class="recipes__videos">
-            <!-- I think i need to separate the videos to position the captions correctly, but when I do, the iframe element text is red, and the video disappears -->
-            <!-- <div class="recipes__video-wcaptions>  -->
+            <div class="recipes__video">
               <iframe
                 width="560"
                 height="315"
@@ -165,12 +168,12 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            <!-- </div> -->
-                    
-            <p class="recipes__video-caption">Aeropress recipe</p>
-            <p class="recipes__video-caption">~5 min</p>
-          
-            <!-- <div class="recipes__video-wcaptions> -->
+              <p class="recipes__video-caption">
+                <span>Aeropress recipe</span>
+                <span>~5 min</span>
+              </p>
+            </div>
+            <div class="recipes__video">
               <iframe
                 width="560"
                 height="315"
@@ -180,10 +183,10 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            <!-- </div>   -->
-            <p class="recipes__video-caption">French press recipe</p>
-            <p class="recipes__video-caption">~15 min</p>
-            </div>       
+              <p class="recipes__video-caption">
+                <span>French press recipe</span> <span>~15 min</span>
+              </p>
+            </div>
           </div>
         </section>
 
@@ -198,7 +201,6 @@
                 placeholder="Name Surname"
                 required
               />
-
               <h3 class="form__label">Number of guests *</h3>
               <input
                 type="number"
@@ -206,10 +208,8 @@
                 placeholder="1-8"
                 required
               />
-
               <h3 class="form__label">Date & time *</h3>
               <input type="datetime-local" class="form__input" required />
-
               <h3 class="form__label">Your email *</h3>
               <input
                 type="email"
@@ -219,8 +219,10 @@
               />
               <button type="submit" class="form__button">Book a table</button>
               <div>
-                <input type="checkbox" class="form__checkbox" />
-                <label class="form__label">I agree with the terms of use</label>
+                <label class="form__label form__label_type_checkbox"
+                  ><input type="checkbox" class="form__checkbox" />I agree with
+                  the terms of use</label
+                >
               </div>
             </fieldset>
           </form>
@@ -228,7 +230,6 @@
 
         <section class="about">
           <div class="about__circle"></div>
-        
           <div class="about__circle_animation_blurred"></div>
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
@@ -245,9 +246,6 @@
               cups!
             </p>
           </div>
-          <div class="about__circle"></div>
-         
-          <div class="about__circle_animation_blurred"></div>
         </section>
       </main>
 
@@ -258,7 +256,6 @@
             src="./images/practicum_logo.svg"
             alt="Practicum Logo"
           />
-
           <div>
             <h2 class="footer__social-heading">Social media</h2>
             <ul class="footer__list">
@@ -288,3 +285,4 @@
     </div>
   </body>
 </html>
+<!-- why is there 16px padding on the footer? -->

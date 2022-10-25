@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -47,10 +46,10 @@
   gap: 40px;
 }
 
-.recipes__video-wcaptions {
+.recipes__video {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: center;
 }
 
