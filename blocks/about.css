@@ -34,7 +34,6 @@
   font-size: 44px;
   color: #ffffff;
   line-height: 52px;
-  z-index: 3;
 }
 
 .about__content {
@@ -71,7 +70,6 @@
   position: absolute;
   top: -156px;
   left: -129px;
-  z-index: 2;
 }
 
 .about__circle_animation_blurred {
