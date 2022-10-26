@@ -16,11 +16,11 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .recipes__subtitle {
-  position: relative;
-  align-self: flex-start;
   max-width: 438px;
   margin-top: 24px;
   margin-left: 80px;
@@ -28,9 +28,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 30px;
-  display: flex;
-  justify-content: space-between;
+  line-height: 30px;  
 }
 
 .recipes__videos {
@@ -64,4 +62,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }

@@ -1,7 +1,6 @@
 @keyframes pulsate {
   0% {
-    opacity: 1;
-    transform: scale(1);
+    opacity: 0;
   }
 
   50% {
@@ -25,7 +24,6 @@
 }
 
 .about__title {
-  position: relative;
   padding-top: 100px;
   padding-left: 80px;
   max-width: 251px;
@@ -34,11 +32,12 @@
   font-size: 44px;
   color: #ffffff;
   line-height: 52px;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1;
 }
 
 .about__content {
-  position: relative;
-  align-items: flex-end;
   max-width: 660px;
   padding-top: 119px;
   padding-right: 80px;

@@ -1,17 +1,24 @@
 .form {
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__fieldset {
   display: flex;
   flex-direction: column;
   border: none;
-  align-items: center;
   width: 385px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .form__label {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 8px;
 }
 
@@ -26,17 +33,20 @@
   margin-bottom: 32px;
   font-size: 20px;
   line-height: 30px;
-  color: #838383;
+  border: #838383 1px solid;
   flex-grow: 1;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__button {
+  /* default browser styles? */
   height: 60px;
   width: 100%;
   border-radius: 4px;
   background-color: #2f80ed;
   color: #ffffff;
-  margin-top: 32px;
   margin-bottom: 32px;
   font-weight: 500;
 }

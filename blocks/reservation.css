@@ -12,20 +12,19 @@
 
 .reservation__title {
   top: 100px;
-  position: relative;
   padding-top: 100px;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+
 .reservation__form {
-  position: relative;
   padding-top: 80px;
   padding-bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  max-width: 385px;
+   max-width: 385px;
   margin: auto;
 }

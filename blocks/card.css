@@ -15,6 +15,9 @@
 
 .card__list {
   padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .card__list-item {
@@ -35,4 +38,6 @@
 .card__list-divider {
   border-bottom: 1px solid #ffffff;
   flex-grow: 1;
+  margin-left: 5px;
+  margin-right: 5px;
 }
