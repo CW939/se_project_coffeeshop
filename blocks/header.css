@@ -9,14 +9,15 @@
   padding-top: 30px;
   padding-left: 80px;
   padding-right: 80px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 80px;
 }
 
 .header__title {
   margin-top: 202px;
+  margin-bottom: 28px;
   max-width: 729px;
   font-size: 60px;
   line-height: 72px;
@@ -32,7 +33,6 @@
 
 .header__description {
   position: relative;
-  margin-top: 28px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
